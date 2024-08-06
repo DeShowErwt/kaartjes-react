@@ -1,0 +1,1 @@
+Vrijwel helemaal af. Title in HTML kan nog worden aangepast. Ook moet de sizing van de tijdlijn gewijzigd worden. Dit lukt niet met de bereken modus dus gaat handmatig.

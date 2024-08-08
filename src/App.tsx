@@ -46,7 +46,6 @@ export default function App() {
                             onClick={() => handleClick(index)} 
                             className={clsx(
                                 "col-span-1 border-r-2 z-10 border-black px-4 w-[20%]",
-                                styles.square, 
                                 index === maps.length - 1 ? 'border-r-0' : ''
                             )}
                         >

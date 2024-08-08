@@ -1,5 +1,6 @@
-square::after {
-    content: attr(data-year);
-    position: absolute;
-    z-index: 100;
-}
+.notransition {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+  }

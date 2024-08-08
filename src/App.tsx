@@ -45,8 +45,8 @@ export default function App() {
                             data-year={map.year}
                             onClick={() => handleClick(index)} 
                             className={clsx(
-                                "col-span-1 border-r-2 z-10 border-black px-4 w-[20%]",
-                                index === maps.length - 1 ? 'border-r-0' : ''
+                                "col-span-1 z-10 border-black px-4 w-[20%]",
+                                index !== maps.length - 1 ? 'border-r-2' : ''
                             )}
                         >
                             <p className="translate-y-[150%] translate-x-[55%] text-[#213547]"> 

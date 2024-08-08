@@ -49,7 +49,7 @@ export default function App() {
                                 index === maps.length - 1 ? 'border-r-0' : ''
                             )}
                         >
-                            <p className="translate-y-[150%] text-[#213547]"> 
+                            <p className="translate-y-[150%] translate-x-[55%] text-[#213547]"> 
                                 { map.year }
                             </p>
                         </button>

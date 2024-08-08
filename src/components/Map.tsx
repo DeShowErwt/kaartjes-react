@@ -17,7 +17,7 @@ export default function MapComponent(props: MapProps) {
         <div className="grid grid-cols-3 gap-10">
             <img className="col-span-2" src={props.image} alt="Map" />
             <div>
-                <h1 className="text-center mb-8">{ props.header } (<Counter from={previousYear} to={props.year} />)</h1> 
+                <h1 className="text-center mb-8">{ props.header } (ca. <Counter from={previousYear} to={props.year} />)</h1> 
                 <p>{ props.description }</p>
             </div>
         </div>

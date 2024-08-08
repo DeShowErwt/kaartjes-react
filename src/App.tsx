@@ -29,7 +29,7 @@ export default function App() {
 
     useLayoutEffect(() => {
         if (barRef.current && progressRef.current) {
-            progressRef.current.style.width = ((barRef.current.clientWidth/5) * (mapValue + 1)) + 'px'
+            progressRef.current.style.width = ((barRef.current.clientWidth/maps.length) * (mapValue + 1)) + 'px'
         }
         window.addEventListener('resize', handleWindowResize)
     }, [mapValue])

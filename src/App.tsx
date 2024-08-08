@@ -20,7 +20,7 @@ export default function App() {
     const handleWindowResize = () => {
         if (barRef.current && progressRef.current) {
             progressRef.current.classList.add(styles.notransition)
-            progressRef.current.style.width = ((barRef.current.clientWidth/5) * (mapValue + 1)) + 'px'
+            progressRef.current.style.width = ((barRef.current.clientWidth/maps.length) * (mapValue + 1)) + 'px'
             // Random read to force reflow
             progressRef.current.offsetHeight
             progressRef.current.classList.remove(styles.notransition)

@@ -9,13 +9,13 @@ export default function App() {
     const [mapValue, setMapValue] = useState(0)
     const [previousMapValue, setPreviousMapValue] = useState(0)
 
+    const barRef = useRef<HTMLDivElement>(null)
+    const progressRef = useRef<HTMLDivElement>(null)
+
     function handleClick(index: number) {
         setPreviousMapValue(mapValue)
         setMapValue(index)
     }
-
-    const barRef = useRef<HTMLDivElement>(null)
-    const progressRef = useRef<HTMLDivElement>(null)
 
     const handleWindowResize = () => {
         if (barRef.current && progressRef.current) {
@@ -45,17 +45,17 @@ export default function App() {
                             data-year={map.year}
                             onClick={() => handleClick(index)} 
                             className={clsx(
-                                "col-span-1 z-10 border-black px-4 w-[20%]",
+                                "col-span-1 z-10 border-black px-4 w-[10%]",
                                 index !== maps.length - 1 ? 'border-r-2' : ''
                             )}
                         >
-                            <p className="translate-y-[150%] translate-x-[55%] text-[#213547]"> 
+                            <p className="translate-y-[150%] translate-x-[65%] text-[#213547]"> 
                                 { map.year }
                             </p>
                         </button>
                     )
                 })}
-                <div className={clsx("absolute h-12 bg-[#213547] border-2 border-black border-r-0 duration-1000 ease-out -top-0.5 -left-0.5")} ref={progressRef} />  
+                <div className={clsx("absolute h-12 bg-[#213547] border-2 border-black border-r-0 duration-1000 ease-out -top-[1.5px] -left-0.5")} ref={progressRef} />  
             </div>
         </>
     )
